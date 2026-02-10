@@ -50,12 +50,16 @@ lexical String
  * - `Number`: One or more digits (simplified), optionally starting with `-`.
  */
 syntax Boolean
-  = "true" | "false"; // Fill in
+  = // TODO
+  | // TODO
+  ; 
 
 syntax Null
-  = "null"; // Fill in
+  = // TODO
+  ;
 
 lexical Number
-  = "-"? [0-9]+; // Fill in (Simplified regex)
+  = // TODO. Hint; think of the pattern for numbers in regular expressions. How do you accept a number in a regex?  
+  ;
 
 layout Whitespace = [\ \t\n\r]* !>> [\ \t\n\r];
