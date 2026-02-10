@@ -38,19 +38,19 @@ import Series1::I_HelloWorld;
 helloWorld();
 ```
 
-### [Series 2: Grammars & Processing](src/Series2.rsc)
+### [Series 2: Grammars & Processing](src/Series2)
 
 In this series, you will define a syntax for **JSON** and write a simple interpreter for it.
 
-Open **[src/Series2.rsc](src/Series2.rsc)** and follow the instructions to:
+Go through the files in order:
 
-1.  **Define the Grammar**: Complete the syntax rules for JSON elements like `Boolean`, `Null`, and `Number`.
-2.  **Parse**: Use the `parse` function to turn a string into a Parse Tree.
-3.  **Transform**: Write a `toValue` function to convert the Concrete Syntax Tree (CST) into native Rascal values (Map, List, etc.).
+1.  **[I_Grammar.rsc](src/Series2/I_Grammar.rsc)**: Define the syntax rules for JSON.
+2.  **[II_Parsing.rsc](src/Series2/II_Parsing.rsc)**: Learn how to parse strings.
+3.  **[III_Transformation.rsc](src/Series2/III_Transformation.rsc)**: Transform the Concrete Syntax Tree (CST) into native Rascal values.
 
 **To run the parser:**
 ```rascal
-import Series2;
+import Series2::II_Parsing;
 testParse();
 ```
 
