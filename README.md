@@ -54,6 +54,16 @@ import Series2::II_Parsing;
 testParse();
 ```
 
+### [Series 3: Small-Robot DSL](src/Robot/scratch/)
+
+In this series, you will build a domain-specific language to control a virtual robot.
+
+1.  **[Syntax.rsc](src/Robot/scratch/Syntax.rsc)**: Define the grammar for the robot commands.
+2.  **[Parser.rsc](src/Robot/scratch/Parser.rsc)**: Implement the parser.
+3.  **[Interpreter.rsc](src/Robot/scratch/Interpreter.rsc)**: Implement the interpreter to execute the robot's actions.
+
+**To run the test:**
+
 ## Need Help?
 
 - Check the [Rascal Documentation](https://www.rascal-mpl.org/docs/).
