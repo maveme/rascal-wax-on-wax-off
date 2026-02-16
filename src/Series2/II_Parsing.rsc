@@ -21,6 +21,13 @@ void testParse() {
  *
  * Create a function `parseFile(loc l)` that reads a file and parses it.
  * Use `readFile(l)` to get the content.
+ *
+ * Doc: 
+ * Location: https://www.rascal-mpl.org/docs/Rascal/Expressions/Values/Location/
+ * readFile: https://www.rascal-mpl.org/docs/Library/IO/#IO-readFile
+ *
+ * Command:
+ * parseJSON("{ \"a\": true}");
  */ 
 start[JSON] parseJSON(str input) {
   return parse(#start[JSON], input);
