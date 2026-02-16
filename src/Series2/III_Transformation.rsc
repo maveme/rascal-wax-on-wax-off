@@ -11,8 +11,6 @@ import String;
  * We use pattern matching on the concrete syntax types.
  *
  * Commands:
- * import Series2::II_Parsing;
- * import Series2::III_Transformation;
  * toValue(parseJSON("{ \"name\": \"Rascal\", \"score\": 100 }").top);
  * toValue(parseFile(|file:///path/to/example.json|));
  */
