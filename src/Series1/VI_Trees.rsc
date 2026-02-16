@@ -14,10 +14,19 @@ import IO;
  * data Tree = leaf(int n) | node(Tree left, Tree right);
  */
 
+/*
+ * Data definition for a recursive colored binary tree.
+ * A node is either:
+ *  - a leaf containing an integer value,
+ *  - a red internal node with left and right subtrees,
+ *  - or a black internal node with left and right subtrees.
+ */
 data ColoredTree
   = leaf(int n)
   | red(ColoredTree left, ColoredTree right)
   | black(ColoredTree left, ColoredTree right);
+
+// Zero-argument function that returns a fixed ColoredTree value.
 
 ColoredTree exampleTree()
   = red(black(leaf(1), red(leaf(2), leaf(3))),
@@ -38,6 +47,9 @@ ColoredTree exampleTree()
  *   }
  *   return count;
  * }
+ *
+ * Command:
+ * - sumLeaves(exampleTree());
  */
 int sumLeaves(ColoredTree t) {
   return 0; // Fill in here
@@ -48,10 +60,14 @@ int sumLeaves(ColoredTree t) {
  *
  * Increment the value of all leaves by 1.
  * Use `visit` with the `=>` operator for replacement.
+ * Note: If you modify and then return t, the tree is not modified.
  *
  * visit (t) {
  *   case leaf(n) => leaf(n+1)
  * }
+ *
+ * Command:
+ * - inc1(exampleTree());
  */
 ColoredTree inc1(ColoredTree t) {
   return t; // Fill in here

@@ -21,6 +21,9 @@ void testParse() {
  *
  * Create a function `parseFile(loc l)` that reads a file and parses it.
  * Use `readFile(l)` to get the content.
+ *
+ * Command:
+ * parseJSON("{ \"a\": true}");
  */ 
 start[JSON] parseJSON(str input) {
   return parse(#start[JSON], input);

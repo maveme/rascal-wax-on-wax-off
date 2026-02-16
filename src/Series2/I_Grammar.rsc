@@ -6,6 +6,7 @@ module Series2::I_Grammar
  * In this series, we will define a grammar for JSON and write a simple interpreter/transformer.
  *
  * Documentation: https://www.rascal-mpl.org/docs/GettingStarted/
+ * Syntax Doc: https://www.rascal-mpl.org/docs/Rascal/Declarations/SyntaxDefinition/
  */
 
 /*
